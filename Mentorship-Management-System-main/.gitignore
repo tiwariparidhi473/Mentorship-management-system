@@ -1,10 +1,89 @@
-﻿node_modules
-.env
-**/.env
-dist
-build
+﻿# Node.js dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+out/
+.next/
+.nuxt/
+.vercel/
+.cache/
+.tmp/
+tmp/
+
+# Environment files
+.env*
+**/.env*
+
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# OS and editor files
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+.swp
+.swo
+.sass-cache/
+.eslintcache
+.parcel-cache/
+.turbo/
+
+# Test coverage
+coverage/
+lcov-report/
+
+# Frontend build
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Backend build
+backend/dist/
+backend/build/
+
+# Miscellaneous
+*.local
+*.cache
+*.pid
+*.seed
+*.tgz
+*.bak
+*.tmp
+*.swp
+*.swo
+*.orig
+*.rej
+
+# MacOS
+.DS_Store
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.Trash-*/
+
+# Ignore lock files except for root and main subfolders
+!package-lock.json
+!frontend/package-lock.json
+!backend/package-lock.json
+
+# Ignore everything in root except the main project folder
+/*
+!/Mentorship-Management-System-main/
+
+# Allow tracked files in main project
+/Mentorship-Management-System-main/**
